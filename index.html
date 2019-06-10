@@ -2,14 +2,121 @@
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="css/page.css"/>
-        <!-- include header here with ejs-->
+        <title>Ryan McIntyre</title>
+        <style> /* will move to css folder later */ 
+            .grid{
+                display:grid;
+                grid-template-columns:1fr 3fr;
+                grid-auto-rows: minmax(1oopx, auto);
+                /*grid-auto-rows:100px;
+                
+                grid-template-columns:repeat(4),1fr 2fr);
+   
+                grid-column-gap:1em;
+                grid-row-gap:1em;
+                */
+                grid-gap:1em;
+            }
+            .grid > div {
+                background:#eee;
+                /*padding:1em;*/
+            }
+            .grid > div:nth-child(odd){
+                background:#ddd;
+            }
+           
+            .image {
+                display:grid;
+                grid-row:1/3;
+            }
+
+            .name {
+                font-size: 2em;
+                text-align: center;
+                align-self: end;
+            }
+
+            .about {
+                display:grid;
+                grid-auto-rows: 100px;
+                border:#333 1px solid;
+            }
+            
+            .projects-grid {
+                display:grid;
+                grid-template-columns:repeat(2,1fr);
+            }
+            .projects-grid > div {
+                border:#333 1px solid;
+            }
+        </style>
+        
     </head>
     <body>
-       <!-- left third of page will be information about self -->
+        <!-- page container -->
+        <div class="grid">
+            <div class="image">image here
+                <div class="name">Ryan McIntyre</div>
+            </div>
+           
+            <div class="education">
+                    <h2>Education</h2>
+                    <div>University of North Carolina - Wilmington</div>
+                    <div>Bachelor's in Science Computer Science</div>
+                    <div>Concentration Digital Arts</div>
+                    <div>GPA: 3.5</div>
+            </div>
+            <div class="experience"> 
+                <h2>Experience</h2>
+                <div>
+                    <h3>GE Hitachi</h3>
+                    <p>Software Developer Intern</p>
+                </div>
+            </div>
+            
+    
+            <div class="about"> New grad looking for entry level software engineer position</div>
+            
+            <div class="projects">  <!-- grid?-->
+                <h2>Projects</h2>
+                <div class="projects-grid">
+                    <div>
+                        <h3>Personal Website  - rrmcinty.github.io</h3>
+                        <div>HTML</div>
+                        <div>CSS</div>
+                        <div>next.js</div>
+                    </div>
+                    <div>
+                        <h3>CSC 450 Final Project - agtodi.com</h3>
+                        <div>HTML</div>
+                        <div>CSS</div>
+                        <div>PHP</div>
+                        <div>SQL</div>
+                    </div>
+                    <div>
+                        <h3>Seahawk Tours - android application</h3>
+                        <div>Java</div>
+                        <div>Android Studio</div>
+                    </div>
+                    <div>project 4</div>
+                </div>
+                
+            </div>
+            
+            <div class="skills">
+                    <h2>Skills</h2>
+                    <div>Java</div>
+                    <div>Python</div>
+            </div>
+        
+            <div class="future">  
+                <h2>Future projects</h2>
+                <div>Finance web application</div>
+                <div>Sports viewer</div>
+            </div>
+        </div>
 
-
-
-       <!-- right two thirds of page will be information about projects/resume -->
+     
         
         <!-- include footer with ejs -->
     </body>
