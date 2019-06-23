@@ -7,7 +7,6 @@ body,html {
     height:100;
     margin:0;
 }
-/* SPLASH */
 .splash {
     display:table;
     background-image: url("../images/splashMedium.png");
@@ -19,7 +18,23 @@ body,html {
     vertical-align: middle;
     text-align:center;
 }
-
+.about {
+    height:100vh;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(2,1fr)
+}
+.image {
+    display:grid;
+    color:white;
+}
+/* .splashContainer > div {
+    border: 1px white solid;
+    font-family:'Helvetica'; 
+    font-size:5em;
+    text-align:center;
+    
+} */
 
 .titleMain {
     font-family: "Helvetica";
@@ -28,36 +43,6 @@ body,html {
     display:table-cell; 
     vertical-align:middle; 
 }
-
-.page-container {
-    width: 100vw;
-}
-/* ABOUT */
-.section {
-    /* height:100vh; */
-    max-width:1024px;
-    margin:auto;
-    color:white;
-}
-
-.about-grid {
-    display:grid;
-    grid-template-columns: repeat(2,1fr);
-    /* border: white 1px solid; */
-
-}
-.profile-image {
-
-}
-.about-text {
-
-}
-.education {
-    
-}
-
-/* WORK */
-
 
 .grid{
     display:grid;
@@ -110,32 +95,29 @@ body,html {
 }
 .section-head > div {
     vertical-align: middle;
-    /* border: 1px white solid; */
+    border: 1px white solid;
 
+    
 }
 
-/* .about {
+.about {
     display:grid;
     grid-auto-rows: 100px;
     border:#333 1px solid;
     text-align:center;
     color:white;
     align-items: start;
-} */
+}
 /*.projects {
     grid-row:1/3;
 }*/
 .projects-grid {
     display:grid;
-    grid-template-columns:repeat(3,1fr);
+    grid-template-columns:repeat(2,1fr);
     
 }
 .projects-grid > div {
-    /* border:#333 1px solid; */
-    /* border-radius:10px; */
+    border:#333 1px solid;
+    border-radius:10px;
     grid-gap:2em;
-}
-
-tab1 {
-     padding-left: 4em; 
 }

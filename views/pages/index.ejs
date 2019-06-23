@@ -1,58 +1,64 @@
 <!DOCTYPE html>
 <html>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- for device sizes -->
     <head>
         <link rel="stylesheet" type="text/css" href="css/page.css"/>
         <title>Ryan McIntyre</title>        
     </head>
     
     <body>
-        <div class="splashContainer">
-           <!-- <img src="/images/splashMedium.png"> -->
-            <div class="titleMain">Ryan McIntyre</div>>
+        <% include ../partials/nav %>
+        <!--HOME-->
+        <div class="splash">
+            <div class="titleMain">Ryan McIntyre</div>
         </div>
-        <!-- page container -->
-        <div class="grid">
-            <div class="image">
-                <img src="/images/profile.jpg" class="profileimage">
-                <div class="name">Ryan McIntyre</div>
-                <div class="about"> New grad looking for entry level software engineer position</div>
-            </div>
-           
-            <div class="title-image">
-
-            </div>
-            <!-- make the rest a grid? -->
-            <div class="section-head">
-                    <div>Education</div>
-            </div>
-            <div class="education">
-                    <h2>Education</h2>
-                    <div>University of North Carolina - Wilmington</div>
-                    <div>Bachelor's in Science Computer Science</div>
-                    <div>Concentration Digital Arts</div>
-                    <div>GPA: 3.5</div>
-            </div>
-            <div class="section-head">
-                    <div>Experience</div>
+        <div class=="page-container"> <!-- come back to this -->
+             <!-- ABOUT  -->
+            <div class="section">
+                <h1 class="section-head">
+                        <div>About</div>
+                </h1>
+                <div class="about-grid">
+                    <div>
+                        <p>
+                                Hello, my name is Ryan and I am originally from Raleigh, NC. I am now a 
+                                recent graduate of the University of North Carolina Wilmington looking to 
+                                pursue a career in software engineering or related fields. I started out 
+                                learning Python and Java but have recently been enjoying the freedom of 
+                                learning new technologies.
+                        </p>
+                        <div class="education">
+                                <h2>Education</h2>
+                                <div>University of North Carolina - Wilmington</div>
+                                <div>Bachelor's in Science Computer Science</div>
+                                <div>Concentration Digital Arts</div>
+                                <div>GPA: 3.5</div>
+                        </div>
+                        <div>   
+                                <h2>Experience </h2>
+                                <div>GE Hitachi<tab1>2018 - present</tab1></div>
+                                <div>Software Developer Intern</div>
+                                <div>Wilmington, NC </div>
+                        </div>
+                    </div>
+                    
+                    <div class="profile-image">
+                        <img src="/images/profile.jpg" class="profileimage">
+                    </div>
                 </div>
-            <div class="experience"> 
-                <div>
-                    <h3>GE Hitachi</h3>
-                    <p>Software Developer Intern</p>
-                </div>
             </div>
-            
-            <div class="section-head">
-                    <div>Projects</div>
-            </div>
-            <div class="projects">  <!-- grid?-->
+            <!-- MY WORK -->
+            <div class="section">
+                <!-- projects -->
+                <h1 class="section-head">
+                        <div>Projects</div>
+                </h1>
                 <div class="projects-grid">
                     <div>
                         <h3>Personal Website  - rrmcinty.github.io</h3>
                         <div>HTML</div>
                         <div>CSS</div>
-                        <div>next.js</div>
+                        <div>node.js</div>
                     </div>
                     <div>
                         <h3>CSC 450 Final Project - agtodi.com</h3>
@@ -66,30 +72,33 @@
                         <div>Java</div>
                         <div>Android Studio</div>
                     </div>
-                    <div>project 4</div>
                 </div>
-                
             </div>
-            
-            <div class="section-head">
-                <div>Skills</div>
-            </div>
-            <div class="skills">
-                <div>Java</div>
-                <div>Python</div>
-            </div>
-            
-            <div class="section-head">
-                <div>Future learning</div>
-            </div>
-            <div class="future">  
-                <div>Finance web application</div>
-                <div>Sports viewer</div>
+            <div class="section">
+                <h1 class="section-head">
+                        <div>Future Learning</div>
+                </h1>
+                <div class="future">  
+                    <div>Finance web application</div>
+                    <div>Sports viewer</div>
+                </div>
             </div>
         </div>
+       
 
-     
+
+
+
+
+        <!--- CONTACT -->
+        <div class="contact">
+            rrmcinty@gmail.com
+        </div>
+
         
         <!-- include footer with ejs -->
+
+        <script src="../scripts/app.js"></script>
     </body>
+
 </html>
